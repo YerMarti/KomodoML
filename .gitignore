@@ -1,0 +1,77 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.spec
+
+# Logs / caches
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / compiled
+*.so
+*.dll
+*.dylib
+
+# ----------------------------
+# Testing
+# ----------------------------
+.coverage
+coverage.xml
+htmlcov/
+.cache/
+.pytest_cache/
+
+# ----------------------------
+# Jupyter / Notebooks
+# ----------------------------
+.ipynb_checkpoints
+*.ipynb
+!examples/*.ipynb   # keep example notebooks if you want them in repo
+
+# ----------------------------
+# IDEs / Editors
+# ----------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------
+# Documentation
+# ----------------------------
+docs/_build/
+site/
+
+# ----------------------------
+# Data / Models (large files)
+# ----------------------------
+data/
+*.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.csv
+*.tsv
+*.json
+models/
