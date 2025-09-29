@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "komodoml"
+version = "0.0.0"
+description = "A unified ML toolkit for models, metrics, plotting, and interpretability."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+  { name="Yeray Martínez", email="yeraym12@gmail.com" }
+]
+keywords = ["machine-learning", "ml", "toolkit", "metrics", "interpretability"]
+
+dependencies = [
+  "scikit-learn>=1.0.0",
+  "matplotlib>=3.0.0",
+  "xgboost>=1.5.0",
+  "shap>=0.40.0",
+  "lime>=0.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yermarti/komodoml"
+Documentation = "https://yermarti.github.io/komodoml"
+Repository = "https://github.com/yermarti/komodoml"
+Issues = "https://github.com/yermarti/komodoml/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "docs*", "examples*"]
