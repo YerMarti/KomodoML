@@ -63,7 +63,7 @@ docs/_build/
 site/
 
 # ----------------------------
-# Data / Models (large files)
+# Data (large files)
 # ----------------------------
 data/
 *.h5
@@ -74,4 +74,3 @@ data/
 *.csv
 *.tsv
 *.json
-models/
