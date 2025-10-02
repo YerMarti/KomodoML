@@ -6,3 +6,4 @@ __version__ = "0.0.0"
 
 # Public API: only user-facing modules
 from . import models
+from . import resampling
