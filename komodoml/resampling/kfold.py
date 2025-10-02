@@ -17,12 +17,10 @@ class KFoldFit(ResamplingStrategy):
     """
 
     def __init__(self, k=5, scorer=None, **kf_kwargs):
-        self.k = k
         self.scorer = scorer
-        self.kf_kwargs = kf_kwargs
         self.scores_ = None
+        self._splitter = KFold(n_splits=k, **kf_kwargs)
 
     def fit(self, model, X, y, **kwargs):
-        splitter = KFold(n_splits=self.k, **self.kf_kwargs)
-        self.scores_ = cross_val_score(model, X, y, cv=splitter, scoring=self.scorer)
+        self.scores_ = cross_val_score(model, X, y, cv=self._splitter, scoring=self.scorer)
         return model.fit(X, y, **kwargs)
