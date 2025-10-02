@@ -1,7 +1,8 @@
 from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
-from komodoml.base import BaseModel, Wrapper
+from komodoml.base import BaseModel
 
-class DecisionTreeClf(BaseModel, metaclass=Wrapper):
+
+class DecisionTreeClf(BaseModel):
     """
     Decision Tree Classifier model.
 
@@ -15,14 +16,13 @@ class DecisionTreeClf(BaseModel, metaclass=Wrapper):
     model : DecisionTreeClassifier
         The underlying Decision Tree Classifier model.
     """
-    wrapped_cls = DecisionTreeClassifier
-
 
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
         self.model = DecisionTreeClassifier(**kwargs)
+        super().__init__(self.model)
 
-class DecisionTreeReg(BaseModel, metaclass=Wrapper):
+
+class DecisionTreeReg(BaseModel):
     """
     Decision Tree Regressor model.
 
@@ -36,9 +36,7 @@ class DecisionTreeReg(BaseModel, metaclass=Wrapper):
     model : DecisionTreeRegressor
         The underlying Decision Tree Regressor model.
     """
-    wrapped_cls = DecisionTreeRegressor
-
 
     def __init__(self, **kwargs):
-        super().__init__(**kwargs)
         self.model = DecisionTreeRegressor(**kwargs)
+        super().__init__(self.model)
