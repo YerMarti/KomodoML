@@ -20,13 +20,13 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: pip install pdoc .
+        run: pip install sphinx sphinx-rtd-theme
 
       # Generate docs
       - name: Generate documentation
         run: |
-          mkdir -p docs
-          pdoc komodoml -t template -d numpy -o docs
+          cd docs
+          make html
 
       # Deploy to GitHub Pages
       - name: Deploy
