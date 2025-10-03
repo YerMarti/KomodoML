@@ -8,27 +8,23 @@ A unified ML toolkit for models, metrics, plotting, and interpretability.
 
 Since KomodoML is not yet published on PyPI, you can install it directly from GitHub or set it up locally for development.
 
-<details>
-    <summary>### Install from GitHub</summary>
+### Install from GitHub
 
-    To install the latest version from the main branch:
+To install the latest version from the main branch:
 
-    ```
-    pip install git+https://github.com/YerMarti/KomodoML.git
-    ```
-<details>
+```
+pip install git+https://github.com/YerMarti/KomodoML.git
+```
 
-<details>
-    <summary>### Local Development Installation</summary>
+### Local Development Installation
 
-    If you want to work on the library or run it in development mode:
+If you want to work on the library or run it in development mode:
 
-    ```
-    git clone https://github.com/YerMarti/KomodoML.git
-    cd KomodoML
-    pip install -e .
-    ```
-<details>
+```
+git clone https://github.com/YerMarti/KomodoML.git
+cd KomodoML
+pip install -e .
+```
 
 ## Quick start
 
