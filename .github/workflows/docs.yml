@@ -1,0 +1,36 @@
+name: Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repo
+      - uses: actions/checkout@v3
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      # Install dependencies
+      - name: Install pdoc
+        run: pip install pdoc
+
+      # Generate docs
+      - name: Generate documentation
+        run: |
+          mkdir -p docs
+          pdoc komodoml -t template -o docs
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
