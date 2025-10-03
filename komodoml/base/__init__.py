@@ -7,6 +7,3 @@ __all__ = [
     "BaseModel",
     "Wrapper",
 ]
-
-for cls in [BaseModel, Wrapper]:
-    cls.__module__ = "komodoml.base"
