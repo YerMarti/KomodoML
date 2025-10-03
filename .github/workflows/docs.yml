@@ -26,7 +26,7 @@ jobs:
       - name: Generate documentation
         run: |
           mkdir -p docs
-          pdoc komodoml -t template -o docs
+          pdoc komodoml -t template -d numpy -o docs
 
       # Deploy to GitHub Pages
       - name: Deploy
