@@ -20,8 +20,7 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: pip install pdoc
-        run: pip install .
+        run: pip install pdoc .
 
       # Generate docs
       - name: Generate documentation
