@@ -1,5 +1,5 @@
 """
-KomodoML: A unified ML toolkit for models, metrics, plotting, and interpretability.
+A unified ML toolkit for models, metrics, plotting, and interpretability.
 """
 
 __version__ = "0.0.0"

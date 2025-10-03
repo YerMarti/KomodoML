@@ -20,17 +20,17 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: pip install sphinx sphinx-rtd-theme
+        run: pip install sphinx furo
 
       # Generate docs
       - name: Generate documentation
         run: |
           cd docs
-          make html
+          sphinx-build -b html source build/html
 
       # Deploy to GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/build
+          publish_dir: ./docs/build/html

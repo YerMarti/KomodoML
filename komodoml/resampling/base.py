@@ -14,7 +14,7 @@ class ResamplingStrategy:
 
         Parameters
         ----------
-        model : BaseModel
+        model
             The model to fit.
         X : array-like, shape (n_samples, n_features)
             Training data.
