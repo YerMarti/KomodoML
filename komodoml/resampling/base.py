@@ -1,4 +1,3 @@
-from komodoml.base.base_model import BaseModel
 from sklearn.base import clone
 import numpy as np
 
@@ -9,7 +8,7 @@ class ResamplingStrategy:
     All resampling strategies should inherit from this class and implement the `fit` method.
     """
 
-    def fit(self, model: BaseModel, X, y, **kwargs):
+    def fit(self, model, X, y, **kwargs):
         """
         Fit the model using the resampling strategy.
 
