@@ -5,6 +5,8 @@
 
 import os
 import sys
+import komodoml
+
 sys.path.insert(0, os.path.abspath('../../'))
 
 # -- Project information -----------------------------------------------------
@@ -13,7 +15,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 project = 'KomodoML'
 copyright = '2025, Yeray Martínez'
 author = 'Yeray Martínez'
-release = '0.0.0'
+release = komodoml.__version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
