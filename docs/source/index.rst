@@ -6,8 +6,14 @@
 KomodoML documentation
 ======================
 
+.. rubric:: Project Info
+
+- **Version:** |release|
+- **Author:** |author|
+- **Repository:** https://github.com/YerMarti/KomodoML
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    komodoml
