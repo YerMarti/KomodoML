@@ -13,7 +13,7 @@ KomodoML documentation
    - **Repository:** https://github.com/YerMarti/KomodoML
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    :caption: Contents:
 
    komodoml

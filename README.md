@@ -1,12 +1,20 @@
+[![PyPI version](https://img.shields.io/pypi/v/komodoml.svg)](https://pypi.org/project/komodoml/)
+[![GitHub release](https://img.shields.io/github/v/release/YerMarti/KomodoML)](https://github.com/YerMarti/KomodoML/releases)
 [![Autodocs](https://github.com/YerMarti/KomodoML/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/YerMarti/KomodoML/actions/workflows/docs.yml)
 
-# KomodoML
+# KomodoML 🐊
 
 A unified ML toolkit for models, metrics, plotting, and interpretability.
 
 ## Installation
 
-Since KomodoML is not yet published on PyPI, you can install it directly from GitHub or set it up locally for development.
+### Install from PyPI
+
+To install the latest version run:
+
+```
+pip install komodoml
+```
 
 ### Install from GitHub
 
@@ -14,16 +22,6 @@ To install the latest version from the main branch:
 
 ```
 pip install git+https://github.com/YerMarti/KomodoML.git
-```
-
-### Local Development Installation
-
-If you want to work on the library or run it in development mode:
-
-```
-git clone https://github.com/YerMarti/KomodoML.git
-cd KomodoML
-pip install -e .
 ```
 
 ## Quick start
@@ -40,7 +38,7 @@ kfold.fit(clf, X, y)
 print(kfold.scores_)
 ```
 
-Alternatively, you can throw the resampling strategy into the model, whatever best suits you.
+Alternatively, you can throw the resampling strategy into the model, whatever suits you best.
 
 ```python
 kfold = KFoldFit(k=5)
@@ -51,4 +49,8 @@ print(kfold.scores_)
 
 ## Documentation
 
-* Documentation: https://yermarti.github.io/KomodoML/
+* You can check the project's documentation at https://yermarti.github.io/KomodoML/
+
+## Other resources
+
+* PyPI: https://pypi.org/project/komodoml/
