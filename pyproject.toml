@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "komodoml"
-version = "0.0.0"
+dynamic = ["version"]
 description = "A unified ML toolkit for models, metrics, plotting, and interpretability."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -22,9 +22,12 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/yermarti/komodoml"
-Documentation = "https://yermarti.github.io/komodoml"
+Documentation = "https://yermarti.github.io/KomodoML"
 Repository = "https://github.com/yermarti/komodoml"
 Issues = "https://github.com/yermarti/komodoml/issues"
 
 [tool.setuptools.packages.find]
 exclude = ["tests*", "docs*", "examples*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "mymodule.__version__"}
