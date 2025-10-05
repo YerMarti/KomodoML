@@ -1,7 +1,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/komodoml.svg)](https://pypi.org/project/komodoml/)
 [![GitHub release](https://img.shields.io/github/v/release/YerMarti/KomodoML)](https://github.com/YerMarti/KomodoML/releases)
 [![Tests](https://github.com/YerMarti/KomodoML/actions/workflows/tests.yml/badge.svg)](https://github.com/YerMarti/KomodoML/actions/workflows/tests.yml)
-![Coverage](https://codecov.io/gh/YerMarti/KomodoML/graph/badge.svg)
+[![Coverage](https://codecov.io/gh/YerMarti/KomodoML/graph/badge.svg?token=IY1AE4STZU)](https://codecov.io/gh/YerMarti/KomodoML)
 [![Autodocs](https://github.com/YerMarti/KomodoML/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/YerMarti/KomodoML/actions/workflows/docs.yml)
 
 # KomodoML 🐊
